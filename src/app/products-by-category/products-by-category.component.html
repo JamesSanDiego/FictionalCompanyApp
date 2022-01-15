@@ -1,0 +1,20 @@
+
+  <!--Below are my Circular Buttons that uses the category tag from the JSON file as the button text-->
+  <button mat-fab (click)="displayProduct(1)">{{productCategories[0].category}}</button>
+  <button mat-fab (click)="displayProduct(2)">{{productCategories[1].category}}</button>
+  <button mat-fab (click)="displayProduct(3)">{{productCategories[2].category}}</button>
+  <button mat-fab (click)="displayProduct(4)">{{productCategories[3].category}}</button>
+  <button mat-fab (click)="displayProduct(5)">{{productCategories[4].category}}</button>
+  <button mat-fab (click)="displayProduct(6)">{{productCategories[5].category}}</button>
+  <button mat-fab (click)="displayProduct(7)">{{productCategories[6].category}}</button>
+  <button mat-fab (click)="displayProduct(8)">{{productCategories[7].category}}</button>
+  <button mat-fab (click)="displayProduct(9)">{{productCategories[8].category}}</button>
+  <button mat-fab (click)="displayProduct(10)">{{productCategories[9].category}}</button>
+
+  <!--Output Area-->
+  <div>
+    <p [innerHTML]="outputArea"></p>
+  </div>
+
+
+ 

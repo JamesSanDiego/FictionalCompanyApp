@@ -1,0 +1,38 @@
+<!--
+  Display ALL products on load in a TABLE format (DONE)
+
+  Must use *ngFor (DONE)
+
+  **Use same formatting as the extDataApp exercise for CSV table (DONE)
+
+  **ONLY INCLUDE: Product ID, Name, Price, Inventory Count from the Products array (DONE)
+
+  **use ngStyle to Align Price & InventoryCount to the right
+
+  **Use a pipe to format currency (DONE)
+-->
+
+<h2>Products</h2> 
+
+<hr>
+
+<table>
+
+
+  <tr>
+    <td [ngStyle]="{fontWeight: 'bold'}">Product ID</td>
+    <td [ngStyle]="{fontWeight: 'bold'}">Name</td>&nbsp;&nbsp;
+    <td [ngStyle]="{fontWeight: 'bold', 'text-align': 'right'}"> Price</td> &nbsp;&nbsp;&nbsp;
+    <td [ngStyle]="{fontWeight: 'bold', 'text-align': 'right'}"> Inventory Count</td>
+  </tr>
+
+
+  <tr *ngFor="let product of productData;">
+    <td>{{product.ProductID}}</td>
+    <td>{{product.Name}}</td>&nbsp;&nbsp;
+    <td [ngStyle]="{'text-align': 'right'}"> {{product.Price | currency:'CAD'}}</td>&nbsp;&nbsp;&nbsp;
+    <td [ngStyle]="{'text-align': 'right'}"> {{product.InventoryCount}}</td>
+  </tr>
+
+
+</table>

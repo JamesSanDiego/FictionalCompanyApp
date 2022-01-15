@@ -1,0 +1,38 @@
+<app-header [personalInfo] = "bio"> </app-header>
+<mat-tab-group mat-stretch-tabs  
+               class="example-stretched-tabs mat-elevation-z4"
+		[ngStyle]="{textAlign: 'center'}">
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        Company<br> Information&nbsp;&nbsp;<mat-icon>location_city</mat-icon>
+      </ng-template>
+      <app-companyinformation [companyInfo]="company"></app-companyinformation>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        All<br> Products&nbsp;&nbsp;<mat-icon>all_inclusive</mat-icon>
+      </ng-template>
+      <app-all-products [productData]="products"></app-all-products>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        Products<br> by<br> Category&nbsp;&nbsp;<mat-icon>category</mat-icon>
+      </ng-template>
+      <app-products-by-category [productCategories]="category"  [productData]="products"></app-products-by-category>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        Personal<br> Information&nbsp;&nbsp;<mat-icon>person</mat-icon>
+      </ng-template>
+      <app-personal-information [personalInfo]="bio"></app-personal-information>
+    </mat-tab>
+
+
+
+</mat-tab-group>
+
+<app-footer></app-footer>

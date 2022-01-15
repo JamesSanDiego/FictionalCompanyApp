@@ -1,0 +1,17 @@
+/* CSS for personal-information-component.html*/
+
+.personal{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "leftSide" "rightSide ";
+}
+
+#leftSide{grid-area: "leftSide";}
+
+#rightSide{grid-area: "rightSide";}
+
+p{
+  font-weight: bold;
+}

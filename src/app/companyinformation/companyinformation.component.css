@@ -1,0 +1,14 @@
+/* CSS for companyinformation-component.html*/
+
+.company{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "leftSide" "rightSide ";
+}
+
+#leftSide{grid-area: "leftSide";}
+
+#rightSide{grid-area: "rightSide";}
+
